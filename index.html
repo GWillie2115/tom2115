@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayflor G. Willie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayflor G. Willie</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+.zoomEffect_2{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+}
+.zoomEffect_2:hover{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.0);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.0);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.0);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color:;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<style>
+body {
+  background-color: white;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 40px #fff, 0 0 20px #fff, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000;
+  }
+  
+  to {
+    text-shadow: 0 0 30px #fff, 0 0 30px #ff4da2, 0 0 40px #ff4da2, 0 0 50px #ff4da2, 0 0 60px #ff4da2, 0 0 70px #ff4da2, 0 0 80px #ff4da2;
+  }
+
+</style>
+
+<style>
+.zoomEffect_2{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+}
+.zoomEffect_2:hover{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.0);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.0);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.0);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+</head>
+<body style="font-family:Verdana;">
+<header>
+<div style="background-color:#87CEEG;padding:1px;">
+   <h1 class="glow">GAYFLOR GABRIEL WILLIE</h1>
+<p>| Web Developer | Linux & Windows Server Administration | Systems Automation | Network Engineer |</p>
+</div>
+</header>
+</div>
+</style>
+</head>
+
+<body>
+     
+<div class="menu-bar">
+
+ <span class="navbar-toggler-icon">
+<nav>
+<ul>
+<li class=""><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="projects.html"><i class="fa fa-clone"></i>Projects</a></li>
+<li><a href="trainings.html"><i class="fa fa-users"></i>Trainings</a></li>
+<li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+</ul>
+</nav>
+</span>
+</div>
+
+<! --- Using HTML5 Validation Attributes
+HTML5 provides built-in attributes that can be used for basic validation-->
+
+<form id="myForm">
+    <input type="text" id="username" required minlength="3" placeholder="Enter username">
+    <input type="email" id="email" required placeholder="Enter email">
+    <input type="password" id="password" required minlength="6" placeholder="Enter password">
+    <input type="submit" value="Submit">
+</form>
+
+
+<! ---JavaScript Validation
+For more control, you can implement custom validation using JavaScript-->
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    let isValid = true;
+
+    // Clear previous error messages
+    document.getElementById("usernameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+
+    // Validate username
+    const username = document.getElementById("username").value;
+    if (username.length < 3) {
+        document.getElementById("usernameError").textContent = "Username must be at least 3 characters long.";
+        isValid = false;
+    }
+
+    // Validate email
+    const email = document.getElementById("email").value;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email)) {
+        document.getElementById("emailError").textContent = "Please enter a valid email address.";
+        isValid = false;
+    }
+
+    if (!isValid) {
+        event.preventDefault(); // Prevent form submission
+    }
+});
+</script>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Business Information Systems professional, with adept workaround in Information Systems Management, Web Development & Content Management Systems, Automation (Python and PHPMYADMIN), Linux (Ubuntu, CentOS) (Windows 2018 - 2022) Server Administration, MikroTik routers, Cisco Meraki Layer 2 switches, Cisco switches, Cloud Computing, Microsoft Azure, Mobile Device Management. Motorola and NGT Codan radio installer & programming. Adept at prioritizing multitasking, and resolving complex technical issues in fast-paced, high-volume work environments. Career history of seamless progressive transitions and integration with new firms, and organizations based on outstanding leadership skills. Proven ability to communicate, collaborate and negotiate effectively with professionals at all levels of firms, organizations, and companies. Fifteen years of hands-on practice in Technology.</p>
+        
+<div class="row">
+    <div class="column">
+    <img src="images/cover3.jpg" alt="Gwill profile" width="400" height="400">
+  </div>
+  <div class="column">
+    <img src="images/cover4.png" alt="Gwill profile" width="700" height="400">
+  </div>
+  <div class="column">
+<img src="images/cover.png" alt="Gwill profile" width="600" height="400">
+    </div>
+
+  <div class="column">
+<img src="images/slide19.jpg" alt="Gwill profile" width="407" height="400">
+       </div>
+<div class="column">
+<img src="images/gw.png" alt="Gwill profile" width="450" height="400">
+        </div>
+<img src="images/img5.png" alt="Gwill profile" width="406" height="400">
+        </div>
+</div>
+
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Powered by: GWillie</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayflor G. Willie</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+.zoomEffect_2{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+}
+.zoomEffect_2:hover{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.0);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.0);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.0);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color:;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<style>
+body {
+  background-color: white;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 40px #fff, 0 0 20px #fff, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000;
+  }
+  
+  to {
+    text-shadow: 0 0 30px #fff, 0 0 30px #ff4da2, 0 0 40px #ff4da2, 0 0 50px #ff4da2, 0 0 60px #ff4da2, 0 0 70px #ff4da2, 0 0 80px #ff4da2;
+  }
+
+</style>
+
+<style>
+.zoomEffect_2{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+}
+.zoomEffect_2:hover{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.0);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.0);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.0);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+</style>
+
+</head>
+<body style="font-family:Verdana;">
+<header>
+<div style="background-color:#87CEEG;padding:1px;">
+   <h1 class="glow">GAYFLOR GABRIEL WILLIE</h1>
+<p>| Web Developer | Linux & Windows Server Administration | Systems Automation | Network Engineer |</p>
+</div>
+</header>
+</div>
+</style>
+</head>
+
+<body>
+     
+<div class="menu-bar">
+ <span class="navbar-toggler-icon">
+<nav>
+<ul>
+<li class=""><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="projects.html"><i class="fa fa-clone"></i>Projects</a></li>
+<li><a href="trainings.html"><i class="fa fa-users"></i>Trainings</a></li>
+<li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+</ul>
+</nav>
+</span>
+</div>
+
+<! --- Using HTML5 Validation Attributes
+HTML5 provides built-in attributes that can be used for basic validation-->
+
+<form id="myForm">
+    <input type="text" id="username" required minlength="3" placeholder="Enter username">
+    <input type="email" id="email" required placeholder="Enter email">
+    <input type="password" id="password" required minlength="6" placeholder="Enter password">
+    <input type="submit" value="Submit">
+</form>
+
+
+<! ---JavaScript Validation
+For more control, you can implement custom validation using JavaScript-->
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    let isValid = true;
+
+    // Clear previous error messages
+    document.getElementById("usernameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+
+    // Validate username
+    const username = document.getElementById("username").value;
+    if (username.length < 3) {
+        document.getElementById("usernameError").textContent = "Username must be at least 3 characters long.";
+        isValid = false;
+    }
+
+    // Validate email
+    const email = document.getElementById("email").value;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email)) {
+        document.getElementById("emailError").textContent = "Please enter a valid email address.";
+        isValid = false;
+    }
+
+    if (!isValid) {
+        event.preventDefault(); // Prevent form submission
+    }
+});
+</script>
+
+
+    <main>
+       <section id="Trainings">
+            <h2>Trainings</h2>
+<P><a>Intuit Quickbooks installations and network configuration for multi-users training for financial team.</a></p>
+<P><a>In house network design and implementation training for IT Assistants.</a></p>
+<p><a>Switches and routing of Cisco catalyst switches,Cisco meraki MX84 and access point training for colleagues.</a></p>
+<p><a>Training for VSAT (KU and C-Band) installation and modem configuratons.</a></p>
+<p><a>AIRMEd Biometric training for Data Management at PREVAIL-Redemption Site</a></p>
+<p><a>1-5 kilometers Ubiquiti point to point setup training</a></p>
+<p><a> Cybersecurity Training for non technology staffers</a></p>
+       
+        </section>
+  <div class="content">
+
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training.png" width="250" height="250">
+</div>
+</a>
+
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training1.png" width="250" height="250">
+</div>
+</a>
+
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training2.png" width="250" height="250">
+</div>
+</a>
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training3.png" width="250" height="250">
+</div>
+</a>
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training4.jpg" width="250" height="250">
+</div>
+</a>
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training5.png" width="250" height="250">
+</div>
+</a>
+
+ <a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training6.png" width="250" height="250">
+</div>
+</a>
+
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training7.png" width="250" height="250">
+</div>
+</a>
+
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training8.jpg" width="250" height="250">
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training9.png" width="250" height="250">
+</div>
+</div>
+</a>
+ <a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training10.jpg" width="250" height="250">
+</div>
+</a>
+
+<a>
+<div class="zoomEffect_2">
+<img border="3" alt="projects" src="images/training11.jpg" width="250" height="250">
+</div>
+</a>
+
+ </div>       
+
+
+
+ 
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Powered by: GWillie</p>
+    </footer>
+</body>
+</html>
